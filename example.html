@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>toast-msg example</title>
+
+   <style>
+      #commands {
+         display: flex;
+      }
+      button {
+         margin: 5px;
+         inline-size: 6rem;
+         block-size: 2rem;
+      }
+      #msg {
+         margin-inline-end: auto;
+      }
+   </style>
+
+   <script type="module" src="toast-msg.js"></script>
+   <script type="module">
+      import ToastMsg from "./toast-msg.js";
+      
+      document.getElementById("ok").addEventListener("click", () => {
+         document.body.appendChild(new ToastMsg());
+      });
+
+      document.getElementById("no").addEventListener("click", () => {
+         document.body.appendChild(new ToastMsg(false));
+      });
+
+      document.getElementById("msg").addEventListener("click", () => {
+         document.body.appendChild(new ToastMsg("This message is comming from the system!"));
+      });
+
+      document.getElementById("ok-ar").addEventListener("click", () => {
+         document.body.appendChild(new ToastMsg(true, "", "rtl"));
+      });
+
+      document.getElementById("no-ar").addEventListener("click", () => {
+         document.body.appendChild(new ToastMsg(false, "", true));
+      });
+
+      document.getElementById("msg-ar").addEventListener("click", () => {
+         document.body.appendChild(new ToastMsg("هذه رسالة باللغة العربية، يجب أن تظهر من اليمين إى اليسار!", 2000, "rtl"));
+      });
+   </script>
+</head>
+
+<body>
+   <div id="commands">
+      <button id="ok">OK</button>
+      <button id="no">NO</button>
+      <button id="msg">Message</button>
+      <button id="ok-ar">نعم</button>
+      <button id="no-ar">لا</button>
+      <button id="msg-ar">رسالة</button>
+   </div>
+</body>
+</html>
