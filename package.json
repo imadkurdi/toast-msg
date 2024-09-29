@@ -1,0 +1,38 @@
+{
+  "name": "@imadkurdi/toast-msg",
+  "version": "1.0.0",
+  "description": "This is a toast-msg component: developers could create several toast messages. They will appear stacked on top of each other, and they will disappear automatically after a certain amount of time. It is a standard custom web component written in pure vanilla JS, so it could be used in any framework.",
+  "main": "toast-msg.js",
+  "keywords": [
+    "toast",
+    "toast message",
+    "toast notification",
+    "toast-notify",
+    "toastify",
+    "push message",
+    "push notification",
+    "push-notification",
+    "notification",
+    "popup",
+    "alert",
+    "feedback",
+    "slide",
+    "slip",
+    "ui",
+    "browser",
+    "component",
+    "web component",
+    "custom element",
+    "vanilla js"
+  ],
+  "author": "Imad Kurdi",
+  "license": "MIT",
+  "homepage": "https://github.com/imadkurdi/toast-msg#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imadkurdi/toast-msg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imadkurdi/toast-msg/issues"
+  }
+}
